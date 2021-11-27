@@ -14,7 +14,7 @@ export default function Pagination({ TotalCount, changePage, pageNum, limit }) {
   // console.log("outside", pageNo);
   useEffect(() => {
     setTotalPages(Math.ceil(TotalCount / limit));
-    // console.log({ pageNum });
+  // console.log({ pageNum });
     setpageNo(pageNum);
   }, [TotalCount]);
   useEffect(() => {
